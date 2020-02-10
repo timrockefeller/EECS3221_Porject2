@@ -59,11 +59,11 @@ Before proceeding, be sure to familiarize yourself with the source code provided
 1. Completing this project will require writing the following C files, which invoke the appropriate scheduling 
 algorithm:
 ```    
-    schedule_fcfs.c   
-    schedule_sjf.c   
-    schedule_rr.c   
-    schedule_priority.c     
-    schedule_priority_rr.c   
+schedule_fcfs.c   
+schedule_sjf.c   
+schedule_rr.c   
+schedule_priority.c     
+schedule_priority_rr.c   
    ``` 
 2. And calculating the *average* **turnaround time**, **waiting time**, and **response time** for each of the above
 scheduling algorithms.

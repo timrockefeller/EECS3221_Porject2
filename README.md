@@ -53,15 +53,17 @@ and would execute the scheduler (using the schedule of tasks `schedule.txt`) as 
     
     ./fcfs schedule.txt 
 Before proceeding, be sure to familiarize yourself with the source code provided as well as the Makefile.
-Completing this project will require writing the following C files:    
+
+## Deliverables
+
+1. Completing this project will require writing the following C files, which invoke the appropriate scheduling 
+algorithm:    
     
     schedule_fcfs.c  
     schedule_sjf.c  
     schedule_rr.c  
     schedule_priority.c  
     schedule_priority_rr.c
-      
-The supporting files invoke the appropriate scheduling algorithm. 
 
-Also have your program to calculate the *average* **turnaround time**, **waiting time**, and **response time** for each of the 
+2. And calculating the *average* **turnaround time**, **waiting time**, and **response time** for each of the 
 scheduling algorithms.

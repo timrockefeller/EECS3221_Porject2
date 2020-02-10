@@ -48,7 +48,7 @@ scheduling algorithm. Tasks selected for execution on the CPU are determined by 
 executed by invoking the `run()` function defined in the `CPU.c` file. A `Makefile` is used to determine the specific 
 scheduling algorithm that will be invoked by driver. For example, to build the FCFS scheduler, we would enter:
         
-        make fcfs  
+    make fcfs  
 and would execute the scheduler (using the schedule of tasks `schedule.txt`) as follows:  
     
     ./fcfs schedule.txt 

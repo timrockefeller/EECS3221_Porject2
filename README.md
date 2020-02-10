@@ -65,5 +65,5 @@ algorithm:
     schedule_priority.c  
     schedule_priority_rr.c
 
-2. And calculating the *average* **turnaround time**, **waiting time**, and **response time** for each of the 
+2. And calculating the *average* **turnaround time**, **waiting time**, and **response time** for each of the above
 scheduling algorithms.

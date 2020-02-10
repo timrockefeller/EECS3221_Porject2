@@ -1,4 +1,4 @@
-### Scheduling Algorithms
+## Scheduling Algorithms
 **Out:** February 10, 2020    
 **Due:** March 2, 2020, at 11:59pm
 

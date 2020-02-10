@@ -19,12 +19,12 @@ For round-robin scheduling, the length of a time quantum is 10 milliseconds.
 The implementation of this project may be completed in C and program files supporting the project are 
 provided in the `StartKit-Code` folder. These supporting files read in the schedule of tasks, 
 insert the tasks into a list, and invoke the scheduler. The schedule of tasks has the form 
-`[task name][priority][CPU burst]`, with the following example format:
-    T1, 4, 20 
-    T2, 2, 25 
-    T3, 3, 25 
-    T4, 3, 15 
-    T5, 10, 10
+`[task name][priority][CPU burst]`, with the following example format:  
+    T1, 4, 20   
+    T2, 2, 25   
+    T3, 3, 25   
+    T4, 3, 15   
+    T5, 10, 10  
 Thus, task T1 has priority 4 and a CPU burst of 20 milliseconds, and so forth. It is assumed that all tasks arrive at 
 the same time, so your scheduler algorithms do not have to support higher-priority processes preempting processes with 
 lower priorities. In addition, tasks do not have to be placed into a queue or list in any particular order.

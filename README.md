@@ -65,4 +65,4 @@ Completing this project will require writing the following C files:
 The supporting files invoke the appropriate scheduling algorithm. 
 
 Also have your program to calculate the *average* _turnaround time_, _waiting time_, and _response time_ for each of the 
-scheduling algorithms.
+scheduling algorithms. k

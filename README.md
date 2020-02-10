@@ -1,6 +1,6 @@
 ### Scheduling Algorithms
 **Out:** February 10, 2020    
-**Due:** February 24, 2020, at 11:59pm
+**Due:** March 2, 2020, at 11:59pm
 
 This project involves implementing several different process scheduling algorithms. 
 The scheduler will be assigned a predefined set of tasks and will schedule the tasks based on the selected scheduling 
@@ -63,3 +63,6 @@ Completing this project will require writing the following C files:
     schedule_priority_rr.c
       
 The supporting files invoke the appropriate scheduling algorithm. 
+
+Also have your program to calculate the *average* _turnaround time_, _waiting time_, and _response time_ for each of the 
+scheduling algorithms.

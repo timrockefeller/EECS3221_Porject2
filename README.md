@@ -13,7 +13,7 @@ algorithm. Each task is assigned a priority and CPU burst. The following schedul
 * Priority with round-robin, which schedules tasks in order of priority and uses round-robin scheduling for tasks with equal priority.
 
 Priorities range from 1 to 10, where a higher numeric value indicates a higher relative priority. 
-For round-robin scheduling, the length of a time quantum is 10 milliseconds.
+For round-robin scheduling, the length of a time `quantum` is `10` milliseconds.
 
 ## Implementation
 The implementation of this project may be completed in C and program files supporting the project are 
@@ -44,7 +44,7 @@ when completing this project.
 ## Implementation Details
 The file `driver.c` reads in the schedule of tasks, inserts each task into a linked list, and invokes the process 
 scheduler by calling the `schedule()` function. The `schedule()` function executes each task according to the specified 
-scheduling algorithm. Tasks selected for execution on the CPU are determined by the pick- `NextTask()` function and are 
+scheduling algorithm. Tasks selected for execution on the CPU are determined by the `pickNextTask()` function and are 
 executed by invoking the `run()` function defined in the `CPU.c` file. A `Makefile` is used to determine the specific 
 scheduling algorithm that will be invoked by driver. For example, to build the FCFS scheduler, we would enter:
         

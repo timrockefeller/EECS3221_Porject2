@@ -46,16 +46,20 @@ The file `driver.c` reads in the schedule of tasks, inserts each task into a lin
 scheduler by calling the `schedule()` function. The `schedule()` function executes each task according to the specified 
 scheduling algorithm. Tasks selected for execution on the CPU are determined by the pick- `NextTask()` function and are 
 executed by invoking the `run()` function defined in the `CPU.c` file. A `Makefile` is used to determine the specific 
-scheduling algorithm that will be invoked by driver. For example, to build the FCFS scheduler, we would enter  
-```make fcfs ```
+scheduling algorithm that will be invoked by driver. For example, to build the FCFS scheduler, we would enter:
+        
+        make fcfs  
 and would execute the scheduler (using the schedule of tasks `schedule.txt`) as follows:  
-```./fcfs schedule.txt``` 
+    
+    ./fcfs schedule.txt 
 Before proceeding, be sure to familiarize yourself with the source code provided as well as the Makefile.
 
 Completing this project will require writing the following C files:    
-    ``` schedule_fcfs.c  
-        schedule_sjf.c  
-        schedule_rr.c  
-        schedule_priority.c  
-        schedule_priority_rr.c```  
+    
+    schedule_fcfs.c  
+    schedule_sjf.c  
+    schedule_rr.c  
+    schedule_priority.c  
+    schedule_priority_rr.c
+      
 The supporting files invoke the appropriate scheduling algorithm. 

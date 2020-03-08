@@ -29,7 +29,7 @@ insert the tasks into a list, and invoke the scheduler. The schedule of tasks ha
     
 Thus, task T1 has priority 4 and a CPU burst of 20 milliseconds, and so forth. It is assumed that all tasks arrive at 
 the same time, so your scheduler algorithms do not have to support higher-priority processes preempting processes with 
-lower priorities. In addition, tasks do not have to be placed into a queue or list in any particular order.
+lower priorities. Tasks must be placed into a queue or list in the order they appear in the input.
 
 There are a few different strategies for organizing the list of tasks, as first presented in Section 5.1.2. One approach 
 is to place all tasks in a single unordered list, where the strategy for task selection depends on the scheduling
@@ -40,6 +40,10 @@ discussed in Section 5.3.6. It is also worth highlighting that we are using the 
 interchangeably. However, a queue has very specific FIFO functionality, whereas a list does not have such strict 
 insertion and deletion requirements. You are likely to find the functionality of a general list to be more suitable 
 when completing this project.
+
+Processes should be run in the order they appear in the input. Processes with equal priorities or burst times should be 
+executed in the order they appear in the input. This applies to ties that may arise during SJF, Priority or Priority 
+with round-robin scheduling (see example output below).
 
 ## Implementation Details
 The file `driver.c` reads in the schedule of tasks, inserts each task into a linked list, and invokes the process 
@@ -54,6 +58,74 @@ and would execute the scheduler (using the schedule of tasks `schedule.txt`) as 
     ./fcfs schedule.txt 
 Before proceeding, be sure to familiarize yourself with the source code provided as well as the Makefile.
 
+## Example output
+
+Consider the following input:
+
+    P0, 9, 35
+    P1, 10, 25
+    P2, 7, 40
+    P3, 6, 20
+    P4, 10, 40
+    P5, 4, 35
+    P6, 10, 20
+    P7, 3, 35
+    P8, 3, 30
+    P9, 4, 30
+    P10, 4, 35
+    P11, 8, 20
+    P12, 4, 20
+    P13, 5, 15
+    P14, 7, 10
+    P15, 1, 25
+    P16, 8, 25
+    P17, 6, 30
+    P18, 2, 40
+    P19, 3, 20
+    P20, 9, 10
+    P21, 7, 5
+    P22, 6, 35
+    P23, 3, 40
+    P24, 9, 30
+
+
+
+Output of the priority scheduling algorithm is given below.
+
+
+    Running task = [P1] [10] [25] for 25 units
+    Running task = [P4] [10] [40] for 40 units
+    Running task = [P6] [10] [20] for 20 units
+    Running task = [P0] [9] [35] for 35 units
+    Running task = [P20] [9] [10] for 10 units
+    Running task = [P24] [9] [30] for 30 units
+    Running task = [P11] [8] [20] for 20 units
+    Running task = [P16] [8] [25] for 25 units
+    Running task = [P2] [7] [40] for 40 units
+    Running task = [P14] [7] [10] for 10 units
+    Running task = [P21] [7] [5] for 5 units
+    Running task = [P3] [6] [20] for 20 units
+    Running task = [P17] [6] [30] for 30 units
+    Running task = [P22] [6] [35] for 35 units
+    Running task = [P13] [5] [15] for 15 units
+    Running task = [P5] [4] [35] for 35 units
+    Running task = [P9] [4] [30] for 30 units
+    Running task = [P10] [4] [35] for 35 units
+    Running task = [P12] [4] [20] for 20 units
+    Running task = [P7] [3] [35] for 35 units
+    Running task = [P8] [3] [30] for 30 units
+    Running task = [P19] [3] [20] for 20 units
+    Running task = [P23] [3] [40] for 40 units
+    Running task = [P18] [2] [40] for 40 units
+    Running task = [P15] [1] [25] for 25 units
+
+    Average waiting time = 306.40
+    Average turnaround time = 333.20
+    Average response time = 306.40
+
+
+
+
 ## Deliverables
 
 1. Completing this project will require writing the following C files, which invoke the appropriate scheduling 
@@ -64,6 +136,11 @@ schedule_sjf.c
 schedule_rr.c   
 schedule_priority.c     
 schedule_priority_rr.c   
-   ``` 
+``` 
 2. And calculating the *average* **turnaround time**, **waiting time**, and **response time** for each of the above
 scheduling algorithms.
+
+Submit all files that are required to build and run the project. This includes the starter code (even if it was not modified), 
+Makefile and any source files that were added. Do not submit object (.*) files and compiled executables.
+
+The output should be formatted exactly as it appears in the sample above.

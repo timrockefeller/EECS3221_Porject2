@@ -141,6 +141,6 @@ schedule_priority_rr.c
 scheduling algorithms.
 
 Submit all files that are required to build and run the project. This includes the starter code (even if it was not modified), 
-Makefile and any source files that were added. Do not submit object (.*) files and compiled executables.
+Makefile and any source files that were added. Do not submit object (*.o) files and compiled executables.
 
 The output should be formatted exactly as it appears in the sample above.

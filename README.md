@@ -1,5 +1,5 @@
 ## Scheduling Algorithms
-**Out:** February 10, 2021    
+**Start:** February 10, 2021    
 **Due:** March 2, 2021, at 11:59pm
 
 This project involves implementing several different process scheduling algorithms. 

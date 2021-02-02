@@ -137,8 +137,7 @@ schedule_rr.c
 schedule_priority.c     
 schedule_priority_rr.c   
 ``` 
-2. And calculating the *average* **turnaround time**, **waiting time**, and **response time** for each of the above
-scheduling algorithms.
+2. And calculating the *average* **turnaround time**, **waiting time**, and **response time** for each of the above scheduling algorithms.
 
 Submit all files that are required to build and run the project. This includes the starter code (even if it was not modified), 
 Makefile and any source files that were added. Do not submit object (*.o) files and compiled executables.

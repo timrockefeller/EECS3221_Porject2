@@ -1,6 +1,6 @@
 ## Scheduling Algorithms
-**Out:** February 10, 2020    
-**Due:** March 2, 2020, at 11:59pm
+**Out:** February 12, 2021    
+**Due:** March 2, 2021, at 11:59pm
 
 This project involves implementing several different process scheduling algorithms. 
 The scheduler will be assigned a predefined set of tasks and will schedule the tasks based on the selected scheduling 

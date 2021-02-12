@@ -1,6 +1,6 @@
 ## Scheduling Algorithms
-**Start:** February 11, 2021    
-**Due:** March 2, 2021, at 11:59pm
+**Start:** February 13, 2021, at 09:00am   
+**Due:** March 7, 2021, at 09:00pm
 
 This project involves implementing several different process scheduling algorithms. 
 The scheduler will be assigned a predefined set of tasks and will schedule the tasks based on the selected scheduling 
@@ -139,7 +139,5 @@ schedule_priority_rr.c
 ``` 
 2. And calculating the *average* **turnaround time**, **waiting time**, and **response time** for each of the above scheduling algorithms.
 
-Submit all files that are required to build and run the project. This includes the starter code (even if it was not modified), 
-Makefile and any source files that were added. Do not submit object (*.o) files and compiled executables.
-
-The output should be formatted exactly as it appears in the sample above.
+3. You need to submit one zip file, `project2.zip` that includes the starter code (even if it was not modified), 
+Makefile and any source files that were added. Do not submit object (*.o) files or compiled executables.
